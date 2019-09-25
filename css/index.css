@@ -134,4 +134,77 @@ html,
 body {
   height: 100%;
 }
-
+body {
+  margin: 0px 30px;
+}
+/* VARIABLES */
+/* MIXINS */
+.flexbox-class {
+  display: flex;
+}
+.font-class {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+/* NAVIGATION */
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0px;
+}
+.nav-bar nav li {
+  display: inline-block;
+  width: 70px;
+  text-align: right;
+}
+.nav-bar nav li nav li a {
+  text-decoration: none;
+  color: black;
+}
+/* TOP SECTION */
+.top-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  background-color: whitesmoke;
+  padding: 40px 20px;
+  width: 100%;
+  height: auto;
+}
+.top-section img {
+  width: 251px;
+  height: 376px;
+}
+.top-section .top-intro {
+  text-align: center;
+  width: 400px;
+  margin-top: 40px;
+}
+.top-section .button {
+  width: 150px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 14px;
+}
+h1,
+h3 {
+  color: teal;
+}
+h1,
+h2,
+h3,
+p,
+th,
+td {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}

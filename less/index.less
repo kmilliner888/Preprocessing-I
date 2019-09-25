@@ -57,3 +57,97 @@ html, body {
     height: 100%;
 }
 
+body {
+	margin: 0px 30px;
+}
+
+
+/* VARIABLES */
+
+@link-color: black;
+@heading-color: teal;
+
+
+/* MIXINS */
+
+.flexbox-class {
+	display: flex;
+}
+
+.font-class {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+
+/* NAVIGATION */
+
+.nav-bar {
+	.flexbox-class();
+	justify-content: flex-end;
+	margin: 20px 0px;
+
+	nav li {
+		display: inline-block;
+		width: 70px;
+		text-align: right;
+
+		nav li a {
+			text-decoration: none;
+			color: @link-color;
+		}
+	}
+}
+
+
+/* TOP SECTION */
+
+.top-section {
+	.flexbox-class();
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+	background-color: whitesmoke;
+	padding: 40px 20px;
+	width: 100%;
+	height: auto;
+
+	img {
+		width: 251px;
+		height: 376px;
+	}
+
+	.top-intro {
+		text-align: center;
+		width: 400px;
+		margin-top: 40px;
+	}
+
+	.button {
+		width: 150px;
+		height: 25px;
+		background-color: black;
+		color: white;
+		border: 1px solid black;
+		border-radius: 8px;
+		font-size: 14px;
+	}
+	
+}
+
+
+
+h1, h3 {
+	color: @heading-color;
+}
+
+h1, h2, h3, p, th, td {
+	.font-class();
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
