@@ -147,6 +147,11 @@ body {
   font-size: 18px;
   font-weight: lighter;
 }
+.section-class {
+  padding: 40px 20px;
+  width: 100%;
+  height: auto;
+}
 /* NAVIGATION */
 .nav-bar {
   display: flex;
@@ -207,6 +212,21 @@ td {
 h1 {
   font-size: 30px;
   font-weight: bold;
+}
+/* MIDDLE SECTION */
+.middle-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+  width: 100%;
+  height: auto;
+}
+.middle-section .about {
+  width: 500px;
+}
+.middle-section .skills {
+  width: 200px;
 }
 /* MEDIA QUERIES */
 @media (max-width: 500px) {

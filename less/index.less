@@ -84,6 +84,12 @@ body {
 	font-weight: lighter;
 }
 
+.section-class {
+	padding: 40px 20px;
+	width: 100%;
+	height: auto;
+}
+
 
 /* NAVIGATION */
 
@@ -111,9 +117,7 @@ body {
 	justify-content: space-evenly;
 	flex-flow: row wrap;
 	background-color: whitesmoke;
-	padding: 40px 20px;
-	width: 100%;
-	height: auto;
+	.section-class();
 
 	img {
 		width: 251px;
@@ -154,7 +158,21 @@ h1 {
 }
 
 
+/* MIDDLE SECTION */
 
+.middle-section {
+	.flexbox-class();
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	.section-class();
+	
+	.about {
+		width: 500px;
+	}
+	.skills {
+		width: 200px;
+	}
+}
 
 
 /* MEDIA QUERIES */
