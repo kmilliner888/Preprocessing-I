@@ -208,3 +208,12 @@ h1 {
   font-size: 30px;
   font-weight: bold;
 }
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .nav-bar {
+    justify-content: center;
+  }
+  .nav-bar nav li {
+    text-align: center;
+  }
+}
