@@ -1,1 +1,290 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: auto;
+}
+body {
+  margin: 0px 30px;
+}
+/* VARIABLES */
+/* MIXINS */
+.flexbox-class {
+  display: flex;
+}
+.font-class {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.section-class {
+  padding: 40px 20px;
+  width: 100%;
+  height: auto;
+}
+.border-class {
+  border: 1px solid black;
+}
+/* NAVIGATION */
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0px;
+}
+.nav-bar nav li {
+  display: inline-block;
+  width: 70px;
+  text-align: right;
+}
+.nav-bar nav li a {
+  text-decoration: none;
+  color: black;
+}
+/* TOP SECTION */
+.top-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  background-color: whitesmoke;
+  padding: 40px 20px;
+  width: 100%;
+  height: auto;
+}
+.top-section img {
+  width: 251px;
+  height: 376px;
+}
+.top-section .top-intro {
+  text-align: center;
+  width: 400px;
+  margin-top: 40px;
+}
+.top-section .button {
+  width: 150px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 14px;
+}
+h1,
+h3 {
+  color: teal;
+}
+h1,
+h2,
+h3,
+p,
+th,
+td {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+/* MIDDLE SECTION */
+.middle-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+  width: 100%;
+  height: auto;
+}
+.middle-section .about {
+  width: 350px;
+  margin: 20px 0px;
+}
+.middle-section .skills {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: teal;
+  margin: 20px 0px;
+}
+.middle-section .skills h3 {
+  text-align: center;
+  color: white;
+}
+.middle-section .skills .underline {
+  width: 100%;
+  color: white;
+}
+.middle-section .skills .skills-table {
+  text-align: center;
+  margin: 20px 0px;
+  width: 200px;
+}
+.middle-section .skills .skills-table td {
+  padding: 10px;
+  color: white;
+}
+/* BOTTOM SECTION */
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  height: auto;
+}
+.bottom-section .work-table {
+  border: 1px solid black;
+  margin: 20px 0px;
+  width: 200px;
+}
+.bottom-section .work-table th {
+  border: 1px solid black;
+}
+.bottom-section .work-table tr {
+  border: 1px solid black;
+}
+.bottom-section .work-table td {
+  padding: 10px 25px;
+  border: 1px solid black;
+}
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .nav-bar {
+    justify-content: center;
+  }
+  .nav-bar nav li {
+    text-align: center;
+  }
+}

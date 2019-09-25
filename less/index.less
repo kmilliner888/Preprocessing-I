@@ -54,6 +54,196 @@ table {
 }
 
 html, body {
-    height: 100%;
+    height: auto;
 }
 
+
+
+
+
+body {
+	margin: 0px 30px;
+}
+
+
+/* VARIABLES */
+
+@link-color: black;
+@heading-color: teal;
+
+
+/* MIXINS */
+
+.flexbox-class {
+	display: flex;
+}
+
+.font-class {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.section-class {
+	padding: 40px 20px;
+	width: 100%;
+	height: auto;
+}
+
+.border-class {
+	border: 1px solid black;
+}
+
+
+/* NAVIGATION */
+
+.nav-bar {
+	.flexbox-class();
+	justify-content: flex-end;
+	margin: 20px 0px;
+
+	nav li {
+		display: inline-block;
+		width: 70px;
+		text-align: right;	
+	}
+	nav li a {
+		text-decoration: none;
+		color: @link-color;
+	}
+}
+
+
+/* TOP SECTION */
+
+.top-section {
+	.flexbox-class();
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+	background-color: whitesmoke;
+	.section-class();
+
+	img {
+		width: 251px;
+		height: 376px;
+	}
+
+	.top-intro {
+		text-align: center;
+		width: 400px;
+		margin-top: 40px;
+	}
+
+	.button {
+		width: 150px;
+		height: 25px;
+		background-color: black;
+		color: white;
+		.border-class();
+		border-radius: 8px;
+		font-size: 14px;
+	}
+	
+}
+
+
+
+h1, h3 {
+	color: @heading-color;
+}
+
+h1, h2, h3, p, th, td {
+	.font-class();
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+/* MIDDLE SECTION */
+
+.middle-section {
+	.flexbox-class();
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	.section-class();
+	
+	.about {
+		width: 350px;
+		margin: 20px 0px;
+	}
+	.skills {
+		width: 350px;
+		.flexbox-class();
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		background-color: teal;
+		margin: 20px 0px;
+
+		h3 {
+			text-align: center;	
+			color: white;
+		}
+
+		.underline {
+			width: 100%;
+			color: white;
+		}
+
+		.skills-table {
+			text-align: center;
+			margin: 20px 0px;
+			width: 200px;
+
+			td {
+				padding: 10px;
+				color: white;
+			}
+		}
+	}
+}
+
+
+/* BOTTOM SECTION */
+
+.bottom-section {
+	.flexbox-class();
+	flex-direction: column;
+	align-items: center;
+	.section-class();
+
+	.work-table {
+		.border-class();
+			margin: 20px 0px;
+			width: 200px;
+
+			th {
+				.border-class();
+			}
+
+			tr {
+				.border-class();
+			}
+
+			td {
+				padding: 10px 25px;
+				.border-class();
+			}
+	}
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 500px) {
+	.nav-bar {
+		justify-content: center;
+		
+		nav li {
+			text-align: center;
+		}
+	}
+}
