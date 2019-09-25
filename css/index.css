@@ -152,6 +152,9 @@ body {
   width: 100%;
   height: auto;
 }
+.border-class {
+  border: 1px solid black;
+}
 /* NAVIGATION */
 .nav-bar {
   display: flex;
@@ -223,10 +226,28 @@ h1 {
   height: auto;
 }
 .middle-section .about {
-  width: 500px;
+  width: 350px;
 }
 .middle-section .skills {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.middle-section .skills h3 {
+  text-align: center;
+}
+.middle-section .skills .skills-table {
+  text-align: center;
+  border: 1px solid black;
+  margin: 20px 0px;
   width: 200px;
+}
+.middle-section .skills .skills-table tr {
+  border: 1px solid black;
+}
+.middle-section .skills .skills-table td {
+  padding: 10px;
 }
 /* MEDIA QUERIES */
 @media (max-width: 500px) {
