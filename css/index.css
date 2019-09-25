@@ -132,7 +132,7 @@ table {
 }
 html,
 body {
-  height: 100%;
+  height: auto;
 }
 body {
   margin: 0px 30px;
@@ -227,27 +227,57 @@ h1 {
 }
 .middle-section .about {
   width: 350px;
+  margin: 20px 0px;
 }
 .middle-section .skills {
   width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  background-color: teal;
+  margin: 20px 0px;
 }
 .middle-section .skills h3 {
   text-align: center;
+  color: white;
+}
+.middle-section .skills .underline {
+  width: 100%;
+  color: white;
 }
 .middle-section .skills .skills-table {
   text-align: center;
+  margin: 20px 0px;
+  width: 200px;
+}
+.middle-section .skills .skills-table td {
+  padding: 10px;
+  color: white;
+}
+/* BOTTOM SECTION */
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  height: auto;
+}
+.bottom-section .work-table {
   border: 1px solid black;
   margin: 20px 0px;
   width: 200px;
 }
-.middle-section .skills .skills-table tr {
+.bottom-section .work-table th {
   border: 1px solid black;
 }
-.middle-section .skills .skills-table td {
-  padding: 10px;
+.bottom-section .work-table tr {
+  border: 1px solid black;
+}
+.bottom-section .work-table td {
+  padding: 10px 25px;
+  border: 1px solid black;
 }
 /* MEDIA QUERIES */
 @media (max-width: 500px) {
